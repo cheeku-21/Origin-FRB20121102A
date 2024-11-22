@@ -33,10 +33,3 @@ The project includes visualizations such as scatterplots, histograms, and cluste
   - Mapping plots (e.g., bandwidth vs. fluence) to analyze relationships between parameters.
 
 ---
-
-## **Installation**
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd frb-clustering-analysis
