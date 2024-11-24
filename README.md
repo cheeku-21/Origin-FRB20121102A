@@ -34,9 +34,62 @@ The project includes visualizations such as scatterplots, histograms, and cluste
 
 ---
 
-## **Installation**
+## **Usage**
 
-1. Clone the repository:
+1. **Data Preprocessing**:  
+   - Ensure the dataset is in the required format (.csv or .xlsx).  
+   - Update the dataset path in the relevant Python scripts.
+   - Visualization:
+Generate visualizations (scatterplots, mapping plots, histograms):
+
+
+2. **Dimensionality Reduction**:  
+   Run UMAP on the dataset:  
    ```bash
-   git clone <repository-url>
-   cd frb-clustering-analysis
+   python umap_clustering.py
+## **Clustering**
+
+Perform HDBSCAN clustering on the reduced dataset.
+
+## **Visualization**
+
+Generate visualizations (scatterplots, mapping plots, histograms).
+
+---
+
+## **Data Analysis and Visualization**
+
+### **Key Visualizations**
+1. **Mapping Plots**:  
+   - Bandwidth vs. Fluence (colored by cluster).  
+
+2. **Histograms**:  
+   - Parameter distributions for each cluster (e.g., linear temporal drift, fluence, bandwidth).  
+
+3. **Clustering Maps**:  
+   - 2D representations of FRB clusters in reduced space.  
+
+### **Parameter Averages**  
+- Compute average parameter values for each cluster with associated errors (standard deviation).
+
+---
+
+## **Key Results**
+
+1. **Cluster-wise Parameter Analysis**:  
+   Clusters exhibit distinct characteristics in parameters like amplitude, bandwidth, fluence, and temporal drift.  
+
+2. **Brightness Temperature (BT)**:  
+   Brightness temperatures for clusters were computed and compared against critical thresholds.  
+
+---
+
+## **Technologies Used**
+
+- **Programming Language**: Python  
+- **Libraries**:  
+  - `numpy`, `pandas` for data manipulation.  
+  - `seaborn`, `matplotlib` for visualizations.  
+  - `umap-learn` for dimensionality reduction.  
+  - `scikit-learn` for clustering and preprocessing.  
+
